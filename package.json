@@ -8,7 +8,7 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && rmdir /s /q out\\interactive-cuj-presentation-randomizer-railguard 2>nul && mkdir out\\interactive-cuj-presentation-randomizer-railguard && robocopy out out\\interactive-cuj-presentation-randomizer-railguard /E /NFL /NDL /NJH /NJS /nc /ns /np >nul && gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -48,11 +48,11 @@
     "embla-carousel-react": "8.5.1",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
-    "next": "16.0.10",
+    "next": "14.1.0",
     "next-themes": "^0.4.6",
-    "react": "19.2.0",
+    "react": "18.2.0",
     "react-day-picker": "9.8.0",
-    "react-dom": "19.2.0",
+    "react-dom": "18.2.0",
     "react-hook-form": "^7.60.0",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.4",
@@ -65,8 +65,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "gh-pages": "^6.0.0",
     "postcss": "^8.5",
     "tailwindcss": "^4.2.2",

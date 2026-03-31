@@ -2,6 +2,7 @@
 
 const nextConfig = {
   output: "export",
+  assetPrefix: "/interactive-cuj-presentation-randomizer-railguard/",
   typescript: {
     ignoreBuildErrors: true,
   },

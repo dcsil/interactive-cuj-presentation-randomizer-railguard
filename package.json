@@ -8,7 +8,7 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "deploy": "npm run build && rmdir /s /q out\\interactive-cuj-presentation-randomizer-railguard 2>nul && mkdir out\\interactive-cuj-presentation-randomizer-railguard && robocopy out out\\interactive-cuj-presentation-randomizer-railguard /E /NFL /NDL /NJH /NJS /nc /ns /np >nul && gh-pages -d out"
+    "deploy": "npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
